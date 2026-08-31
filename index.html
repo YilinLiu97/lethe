@@ -28,6 +28,9 @@
       .publication-affiliations span:nth-child(3) sup { color: #e6a300; }
       .publication-affiliations span:nth-child(4) sup { color: #7d62c5; }
       .video-section { padding: 1.5rem 0 6rem; }
+      .section-intro { margin: 0 0 1.4rem; text-align: left; }
+      .section-intro h2 { margin: 0; font-family: "Manrope", "Avenir Next", Avenir, sans-serif; font-size: clamp(1.85rem, 3vw, 2.5rem); font-weight: 700; letter-spacing: -.035em; line-height: 1.15; }
+      .section-intro p { margin: .45rem 0 0; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.2rem); line-height: 1.5; }
       .video-frame { position: relative; overflow: hidden; width: 100%; background: #0d0e11; border: 1px solid rgb(255 255 255 / 8%); border-radius: 20px; box-shadow: var(--shadow); line-height: 0; }
       .video-frame::after { position: absolute; inset: 0; border: 1px solid rgb(255 255 255 / 14%); border-radius: inherit; content: ""; pointer-events: none; }
       .secondary-video { margin-top: 3rem; }
@@ -66,9 +69,12 @@
           </div>
         </div>
       </section>
-      <section class="video-section" aria-labelledby="project-video-title">
+      <section class="video-section" aria-labelledby="demo-heading">
         <div class="content-width">
-          <h2 id="project-video-title" class="screen-reader-only">Project videos</h2>
+          <div class="section-intro">
+            <h2 id="demo-heading">Demo</h2>
+            <p>Better prompt following and identity consistency</p>
+          </div>
           <div class="video-frame">
             <video controls autoplay muted loop playsinline preload="metadata" aria-label="Forgetting without Erasure project video">
               <source src="https://yilin-liu-lethe-editable-memory.ball97.chatgpt.site/man_gambling_cov.mp4" type="video/mp4" />
